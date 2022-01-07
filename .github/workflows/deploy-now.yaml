@@ -33,7 +33,8 @@ jobs:
       - name: Build project
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         run: yarn build
-        env:
+        env:git config --global user.name "BrokenXOStiletto"
+git config --global user brokenstiletto15@gmail.com
           CI: true
           SITE_URL: ${{ steps.project.outputs.site-url }}
       - name: Deploy build
